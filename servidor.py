@@ -9,7 +9,7 @@ import json
 import sys
 import os
 
-
+print(os.environ['PORT'])
 os.environ['PORT'] = '8080'
 print(os.environ['PORT'])
 
