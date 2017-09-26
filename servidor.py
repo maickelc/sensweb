@@ -27,8 +27,8 @@ def teste():
 
 if __name__ == "__main__":
     try:
-        host, port = sys.argv[1].split(':')
-        app.run(host=host, port=port)
+        port = int(os.environ.get("PORT", 5000))
+        app.run(host='0.0.0.0', port=port)
     except:
         print('Problems!?')
         raise SystemExit
