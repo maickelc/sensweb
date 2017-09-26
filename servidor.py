@@ -9,9 +9,6 @@ import json
 import sys
 import os
 
-print(os.environ['PORT'])
-os.environ['PORT'] = '8080'
-print(os.environ['PORT'])
 
 app = Flask(__name__)
 
@@ -32,7 +29,7 @@ def teste():
 
 if __name__ == "__main__":
     try:
-        port = int(os.environ.get("PORT", 8080))
+        port = int(os.environ.get("PORT", 5000))
         app.run(host='0.0.0.0', port=port)
     except:
         print('Problems!?')
