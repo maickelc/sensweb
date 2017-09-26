@@ -1,3 +1,3 @@
 web: python servidor.py
 ports:
-    - "80:800"
+    - "5000:800"
