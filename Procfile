@@ -1,2 +1,1 @@
-web: python servidor.py
-heroku ps:forward 9090
+worker: python servidor.py
