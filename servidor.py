@@ -9,6 +9,10 @@ import json
 import sys
 import os
 
+
+os.environ['PORT'] = 8080
+print(os.environ['PORT'])
+
 app = Flask(__name__)
 
 @app.route('/teste/https', methods=['POST', 'GET'])
