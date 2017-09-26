@@ -10,7 +10,7 @@ import sys
 import os
 
 
-os.environ['PORT'] = 8080
+os.environ['PORT'] = '8080'
 print(os.environ['PORT'])
 
 app = Flask(__name__)
