@@ -9,7 +9,6 @@ import json
 import sys
 import os
 
-
 app = Flask(__name__)
 
 @app.route('/teste/https', methods=['POST', 'GET'])
